@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+	<script type="text/javascript" src="./jquery2.0.0.js"></script>
+	<script>
+	$(document).ready(function(){
+		$("#ib").click(function(){
+			$("#view").text("fuck");
+		});
+	});
+	</script>
+	<title>Resume(^_^)</title>
+	<link href="./resume.css" "all" rel="stylesheet">
+</head>
+<body>
+<div id="wrap">
+    <div id="header">
+		<div id="h1">
+			<img id="avatar" src="./sl.jpeg"></img>
+			<span id="name">Dimon.Warm~</span>
+		</div>
+	</div>
+    <div id="page">
+		<div id="page-left">
+			<button id="ib" type="button">click</button>
+		</div>
+		<div id="page-right">
+			<p id="view"></p>
+		</div>
+	</div>
+	<div class="clear"></div>
+	<div id="footer"></div>
+</div>
+</body>
+</html>
