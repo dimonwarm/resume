@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+	<script type="text/javascript" src="./jquery2.0.0.js"></script>
+	<script>
+	$(document).ready(function(){
+		$("#person").mouseenter(function(){
+			$("*").removeClass("hovered");
+			$("#person").addClass("hovered");
+			$("#view").load('person_view.html');
+		});
+		$("#school").mouseenter(function(){
+			$("*").removeClass("hovered");
+			$(this).addClass("hovered");
+			$("#view").load('school_view.html');
+		});
+		$("#skill").mouseenter(function(){
+			$("*").removeClass("hovered");
+			$(this).addClass("hovered");
+			$("#view").load('skill_view.html');
+		});
+		$("#state").mouseenter(function(){
+			$("*").removeClass("hovered");
+			$(this).addClass("hovered");
+			$("#view").load('state_view.html');
+		});
+		$("#github").mouseenter(function(){
+			$("*").removeClass("hovered");
+			$(this).addClass("hovered");
+			$("#view").load('github_view.html');
+		});
+	});
+	</script>
+	<title>Resume(^_^)</title>
+	<style type="text/css">
+	.hovered
+	{
+		background-color:#DECAFF;
+	}
+	</style>
+	<link href="./resume.css" rel="stylesheet">
+</head>
+<body>
+<div id="wrap">
+    <div id="header">
+		<div id="h1">
+			<img id="avatar" src="./sl.jpeg"></img>
+			<span id="name">Dimon.Warm~</span>
+		</div>
+	</div>
+    <div id="page">
+		<div id="page-left">
+			<div id="person">个人档案</div>
+			<div id="school">在校表现</div>
+			<div id="skill">技能实践</div>
+			<div id="state">自我鉴定</div>
+			<div id="github"><a href="https://github.com/dimonwarm" target="BLANK" style="text-decoration:none" title="click me!" >My GitHub</a></div>
+		</div>
+		<div id="page-right">
+			<p id="view"></p>
+		</div>
+	</div>
+	<div class="clear"></div>
+	<div id="footer"></div>
+</div>
+</body>
+</html>
