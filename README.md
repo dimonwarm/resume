@@ -1,1 +1,1 @@
-just a resume
+个人档案
